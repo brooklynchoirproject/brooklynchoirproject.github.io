@@ -2,16 +2,6 @@ import { useEffect, useRef } from 'react'
 import LogoMark from './LogoMark.jsx'
 import { aboutParagraphs, site } from '../data.js'
 
-function InstagramIcon() {
-  return (
-    <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" strokeWidth="1.6" aria-hidden="true">
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <circle cx="12" cy="12" r="4.2" />
-      <circle cx="17.4" cy="6.6" r="1.15" fill="currentColor" stroke="none" />
-    </svg>
-  )
-}
-
 export default function InfoPanel({ open, onOpen, onClose }) {
   const closeRef = useRef(null)
 
@@ -46,8 +36,8 @@ export default function InfoPanel({ open, onOpen, onClose }) {
         aria-label="About Brooklyn Choir Project"
         hidden={!open}
       >
-        <button className="info-close" onClick={onClose} ref={closeRef}>
-          Close
+        <button className="info-close" onClick={onClose} ref={closeRef} aria-label="Close">
+          x
         </button>
 
         <div className="info-body">
@@ -59,21 +49,27 @@ export default function InfoPanel({ open, onOpen, onClose }) {
                   <LogoMark className="inline-logo" />{' '}
                 </>
               )}
-              {para.text}
+              {para.href ? (
+                <a className="info-link" href={para.href} target="_blank" rel="noreferrer">
+                  {para.text}
+                </a>
+              ) : (
+                para.text
+              )}
             </p>
           ))}
         </div>
 
         <div className="info-links">
-          <a
-            className="info-icon"
-            href={site.instagram}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Brooklyn Choir Project on Instagram"
-          >
-            <InstagramIcon />
-          </a>
+          <span className="info-link-group">
+            <a className="info-link" href={site.mailingListUrl} target="_blank" rel="noreferrer">
+              mailing list
+            </a>
+            <span className="info-link-sep"> // </span>
+            <a className="info-link" href={site.instagram} target="_blank" rel="noreferrer">
+              instagram
+            </a>
+          </span>
           {site.ticketsUrl && (
             <a className="info-tickets" href={site.ticketsUrl} target="_blank" rel="noreferrer">
               Tickets

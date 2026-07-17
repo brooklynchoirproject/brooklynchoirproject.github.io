@@ -13,10 +13,18 @@ Then open: `http://localhost:5173/`.
 Everything editable lives in `src/data.js`:
 
 - `aboutParagraphs` — the text shown in the INFO panel. Each entry is one paragraph;
-  set `withLogo: true` on an entry to render the wordmark inline at the start of it.
-- `site.instagram` — the Instagram link icon's URL.
+  set `withLogo: true` on an entry to render the wordmark inline at the start of it, or
+  `href: '...'` to make the whole paragraph a link.
+- `site.mailingListUrl` — the "mailing list" link's URL.
+- `site.instagram` — the Instagram link's URL.
 - `site.ticketsUrl` — set to a URL to show a TICKETS link in the INFO panel, or leave
   `''` to hide it.
+
+## Deploying
+
+Pushing to `main` triggers `.github/workflows/deploy.yml`, which runs `npm run build`
+and publishes the `dist/` output to GitHub Pages. One-time setup: in the repo's
+**Settings → Pages**, set **Source** to "GitHub Actions".
 
 ## How to change the images/videos
 

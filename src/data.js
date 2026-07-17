@@ -4,6 +4,7 @@
 
 export const site = {
   instagram: 'https://www.instagram.com/brooklynchoirproject/',
+  mailingListUrl: 'https://08d23f87.sibforms.com/serve/MUIFANctSBcfcLv-gFXrdrL6zhdz-UwAvp2xC-3WSoeIqMIOJM-SQU50v_EofG6S-_Xhv8GXGW_l90VjZ7oLB2_G4UgSno7W3TgdceAdUyayFkKml8MSMXcrLUJPcMDxg3JDXhf4-g_KqYZpsXVJiJYL-s_68tn8Rd7sxGPycuGm7jUpoDvxBxTz-B_E7AAOJ4h5n60sa_nxUfCezA==',
 
   // Optional: set to a URL (e.g. your DICE page) to show a TICKETS link in
   // the info panel. Leave as '' to hide the link entirely.
@@ -15,13 +16,17 @@ export const site = {
 export const aboutParagraphs = [
   {
     withLogo: true,
-    text: 'is taking one of the oldest and most conservative of music genres \u2013 choral singing \u2013 and infusing it with the energy and ethos of New York\u2019s indie and underground music communities.',
+    text: 'is reimagining the choir, infusing it with the energy and ethos of New York’s indie and underground music communities.',
   },
   {
     text: 'It\u2019s all the good things about singing together: community, the spine-tingling power of voices rising up together, the weekly challenge of weaving voices into harmony. But it\u2019s done fundamentally differently: the material is freshly written and arranged by songwriters \u2013 of any genre \u2013 who themselves are in the choir, singing side by side with other singers.',
   },
   {
-    text: 'Audition slots \& song submissions for Fall 2026 coming soon.',
+    text: 'Song submissions for Fall 2026 open until July 31st.',
+    href: 'https://forms.gle/h4yxVbJdexnGuCby5',
+  },
+  {
+    text: 'Auditions open August 1st.'
   },
 ]
 
