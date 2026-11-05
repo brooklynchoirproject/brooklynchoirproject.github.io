@@ -72,7 +72,7 @@ export default function InfoPanel({ open, onOpen, onClose }) {
           </span>
           {site.ticketsUrl && (
             <a className="info-tickets" href={site.ticketsUrl} target="_blank" rel="noreferrer">
-              Tickets
+              tickets
             </a>
           )}
         </div>
