@@ -8,7 +8,7 @@ export const site = {
 
   // Optional: set to a URL (e.g. your DICE page) to show a TICKETS link in
   // the info panel. Leave as '' to hide the link entirely.
-  ticketsUrl: '',
+  ticketsUrl: 'https://dice.fm/bundles/brooklyn-choir-project-d3b6',
 }
 
 // Paragraphs shown in the INFO panel. `withLogo: true` renders the wordmark
@@ -20,6 +20,10 @@ export const aboutParagraphs = [
   },
   {
     text: 'It\u2019s all the good things about singing together: community, the spine-tingling power of voices rising up together, the weekly challenge of weaving voices into harmony. But it\u2019s done fundamentally differently: the material is freshly written and arranged by songwriters \u2013 of any genre \u2013 who themselves are in the choir, singing side by side with other singers.',
+  },
+  {
+    text: 'tickets for our dec 17-19 shows here',
+    url: 'https://dice.fm/bundles/brooklyn-choir-project-d3b6',
   },
 ]
 
