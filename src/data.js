@@ -22,8 +22,7 @@ export const aboutParagraphs = [
     text: 'It\u2019s all the good things about singing together: community, the spine-tingling power of voices rising up together, the weekly challenge of weaving voices into harmony. But it\u2019s done fundamentally differently: the material is freshly written and arranged by songwriters \u2013 of any genre \u2013 who themselves are in the choir, singing side by side with other singers.',
   },
   {
-    text: 'tickets for our dec 17-19 shows here',
-    url: 'https://dice.fm/bundles/brooklyn-choir-project-d3b6',
+    text: '<a href="https://dice.fm/bundles/brooklyn-choir-project-d3b6" target="_blank" rel="noreferrer">tickets for our dec 17-19 shows here</a>',
   },
 ]
 
