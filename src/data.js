@@ -8,7 +8,7 @@ export const site = {
 
   // Optional: set to a URL (e.g. your DICE page) to show a TICKETS link in
   // the info panel. Leave as '' to hide the link entirely.
-  ticketsUrl: 'https://dice.fm/bundles/brooklyn-choir-project-d3b6',
+  ticketsUrl: '',
 }
 
 // Paragraphs shown in the INFO panel. `withLogo: true` renders the wordmark
