@@ -13,6 +13,8 @@ export const site = {
 
 // Paragraphs shown in the INFO panel. `withLogo: true` renders the wordmark
 // inline at the start of the sentence, as on the original site.
+// Plain text only (HTML is shown literally). For a link, add `href: '...'`;
+// add `center: true` to center the paragraph.
 export const aboutParagraphs = [
   {
     withLogo: true,
@@ -22,7 +24,9 @@ export const aboutParagraphs = [
     text: 'It\u2019s all the good things about singing together: community, the spine-tingling power of voices rising up together, the weekly challenge of weaving voices into harmony. But it\u2019s done fundamentally differently: the material is freshly written and arranged by songwriters \u2013 of any genre \u2013 who themselves are in the choir, singing side by side with other singers.',
   },
   {
-    text: '<div style="text-align: center;"><a href="https://dice.fm/bundles/brooklyn-choir-project-d3b6" target="_blank" rel="noreferrer">tickets for our dec 17-19 shows here</a></div>',
+    text: 'tickets for our dec 17-19 shows here',
+    href: 'https://dice.fm/bundles/brooklyn-choir-project-d3b6',
+    center: true,
   },
 ]
 

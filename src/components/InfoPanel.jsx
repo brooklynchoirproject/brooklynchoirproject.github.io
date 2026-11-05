@@ -42,7 +42,7 @@ export default function InfoPanel({ open, onOpen, onClose }) {
 
         <div className="info-body">
           {aboutParagraphs.map((para, i) => (
-            <p key={i}>
+            <p key={i} style={para.center ? { textAlign: 'center' } : undefined}>
               {para.withLogo && (
                 <>
                   {'The '}
